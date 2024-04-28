@@ -1,14 +1,14 @@
 <script setup>
 const description
-    = 'Исследуйтем мир веб технологий вместе. Маленький блог о все что может пригодится разработчику.'
+    = 'Исследуйтем мир веб технологий вместе. Маленький блог о всем что может пригодится разработчику.'
 const ogTitle
-    = 'Исследуйтем мир веб технологий вместе. Маленький блог о все что может пригодится разработчику.'
+    = 'Исследуйтем мир веб технологий вместе. Маленький блог о всем что может пригодится разработчику.'
 const twitterDescription
-    = 'Исследуйтем мир веб технологий вместе. Маленький блог о все что может пригодится разработчику.'
+    = 'Исследуйтем мир веб технологий вместе. Маленький блог о всем что может пригодится разработчику.'
 const image
-    = 'https://res.cloudinary.com/dmecmyphj/image/upload/v1673548905/nuxt-blog/cover_ntgs6u.webp'
+    = ''
 const keywords = 'WEB, Front-end, Back-end, Innovation, Learn, Explore'
-const mySite = 'https://denibu.com/'
+const mySite = 'https://denimoli.github.io/'
 
 useHead({
   htmlAttrs: {

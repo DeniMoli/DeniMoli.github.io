@@ -1,9 +1,9 @@
 <script setup lang="ts">
 defineOgImageComponent('About', {
-  headline: 'Greetings 👋',
-  title: 'Riyad\'s Blog',
-  description: 'Dive into web development with me and learn Js, Ts, Vue, Nuxt, Docker, k8s',
-  link: '/riyad.jpg',
+  headline: 'Приветствую вас 👋',
+  title: 'Блог Дениса Бычкова',
+  description: 'Погрузитесь в веб-разработку вместе со мной и изучите Js, Ts, Vue, Nuxt, Docker',
+  link: '/Denis.jpg',
 })
 </script>
 
@@ -14,12 +14,12 @@ defineOgImageComponent('About', {
         <div class="flex justify-between">
           <div>
             <h1 class="text-xl sm:text-4xl  pb-2 font-bold ">
-              Al Asad Nur Riyad
+              Денис Бычков
             </h1>
 
             <div class="my-3 space-x-2 md:space-x-3 pb-10">
               <NuxtLink
-                to="https://github.com/nurRiyad"
+                to="https://github.com/DeniMoli"
                 target="_blank"
                 class="px-2 py-1 lg:px-3 lg:py-2 bg-gray-300 text-gray-800 rounded-md dark:bg-slate-700 dark:text-[#F1F2F4]"
                 aria-label="Github"
@@ -27,7 +27,7 @@ defineOgImageComponent('About', {
                 <Icon name="fa:github" size="1em" />
               </NuxtLink>
               <NuxtLink
-                to="https://www.linkedin.com/in/nur-riyad/"
+                to="/"
                 target="_blank"
                 class="px-2 py-1 lg:px-3 lg:py-2 bg-gray-300 text-gray-800 rounded-md dark:bg-slate-700 dark:text-[#F1F2F4]"
                 aria-label="LinkedIn"
@@ -35,7 +35,7 @@ defineOgImageComponent('About', {
                 <Icon name="fa:linkedin-square" size="1em" />
               </NuxtLink>
               <NuxtLink
-                to="https://twitter.com/qdnvubp"
+                to="/"
                 target="_blank"
                 class="px-2 py-1 lg:px-3 lg:py-2 bg-gray-300 text-gray-800 rounded-md dark:bg-slate-700 dark:text-[#F1F2F4]"
                 aria-label="Twitter"
@@ -43,7 +43,7 @@ defineOgImageComponent('About', {
                 <Icon name="fa:twitter-square" size="1em" />
               </NuxtLink>
               <NuxtLink
-                to="https://stackoverflow.com/users/16781395/nur-riyad"
+                to="/"
                 target="_blank"
                 class="px-2 py-1 lg:px-3 lg:py-2 bg-gray-300 text-gray-800 rounded-md dark:bg-slate-700 dark:text-[#F1F2F4]"
                 aria-label="StackOverflow"
@@ -54,7 +54,7 @@ defineOgImageComponent('About', {
           </div>
           <div class="sm:hidden block col-span-3 pb-5 dark:text-[#F1F2F4]">
             <NuxtImg
-              src="/riyad.jpg"
+              src="/Denis.jpg"
               width="125"
               height="115"
               quality="50"
@@ -63,18 +63,16 @@ defineOgImageComponent('About', {
           </div>
         </div>
         <h3 class="text-base sm:text-3xl font-semibold pb-7 sm:pb-12">
-          Software Engineer, Problem Solver, Web Enthusiast.
+          Инженер-программист, специалист по решению проблем, веб-энтузиаст.
         </h3>
 
         <p>
-          Hello, fellow human! I'm a software wizard who spends most of his day crafting code spells at @AppsCode in
-          the Bytebuilders team. When I'm not crafting code, you can find me summoning solutions to problems on online
-          judges. Just don't ask me to cast any love spells, my magic only works on machines!
+          Здравствуй, друг человеческий! Я - волшебник-программист, который проводит большую часть своего дня, изучая мир веб технологий. Только не просите меня произносить любовные заклинания, моя магия действует только на машины!
         </p>
       </div>
       <div class="hidden sm:block col-span-3">
         <NuxtImg
-          src="/riyad.jpg"
+          src="/Denis.jpg"
           width="450"
           height="500"
           quality="50"

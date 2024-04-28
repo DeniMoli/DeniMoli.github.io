@@ -15,7 +15,7 @@ export default defineNuxtConfig({
     head: {
       charset: 'utf-16',
       viewport: 'width=device-width,initial-scale=1',
-      title: 'D-Blog',
+      title: 'D-blog',
       titleTemplate: '%s - D-Blog',
       meta: [
         {
@@ -40,7 +40,7 @@ export default defineNuxtConfig({
   },
 
   site: {
-    url: 'https://d-blog.com/',
+    url: 'https://denimoli.github.io/',
     identity: {
       type: 'Person',
     },

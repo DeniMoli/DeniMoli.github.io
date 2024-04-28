@@ -64,10 +64,10 @@ useHead({
   meta: [
     {
       name: 'description',
-      content: 'Here you will find all the blog posts I have written & published on this site.',
+      content: 'Здесь вы найдете все записи, которые я написал и опубликовал на этом сайте.',
     },
   ],
-  titleTemplate: 'Riyad\'s Blog - %s',
+  titleTemplate: 'Блог Дениса Бычкова - %s',
 })
 
 // Generate OG Image
@@ -75,7 +75,7 @@ const siteData = useSiteConfig()
 defineOgImage({
   props: {
     title: 'Archive',
-    description: 'Here you will find all the blog posts I have written & published on this site.',
+    description: 'Здесь вы найдете все записи, которые я написал и опубликовал на этом сайте.',
     siteName: siteData.url,
   },
 })

@@ -34,7 +34,7 @@ useHead({
     { hid: 'og:type', property: 'og:type', content: 'website' },
     {
       property: 'og:url',
-      content: `https://blog-nurriyad.vercel.app/${path}`,
+      content: `https://denimoli.github.io/${path}`,
     },
     {
       property: 'og:title',
@@ -53,7 +53,7 @@ useHead({
     { name: 'twitter:card', content: 'summary_large_image' },
     {
       name: 'twitter:url',
-      content: `https://blog-nurriyad.vercel.app/${path}`,
+      content: `https://denimoli.github.io/${path}`,
     },
     {
       name: 'twitter:title',
@@ -71,14 +71,14 @@ useHead({
   link: [
     {
       rel: 'canonical',
-      href: `https://blog-nurriyad.vercel.app/${path}`,
+      href: `https://denimoli.github.io/${path}`,
     },
   ],
 })
 
 // Generate OG Image
 defineOgImageComponent('Test', {
-  headline: 'Greetings 👋',
+  headline: 'Приветствую вас 👋',
   title: data.value.title || '',
   description: data.value.description || '',
   link: data.value.ogImage,

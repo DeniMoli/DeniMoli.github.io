@@ -39,10 +39,10 @@ useHead({
   meta: [
     {
       name: 'description',
-      content: `You will find all the ${category.value} related post here`,
+      content: `Все записи, связанные с ${category.value}, вы найдете здесь`,
     },
   ],
-  titleTemplate: 'Riyad\'s Blog - %s',
+  titleTemplate: 'Блог Дениса Бычкова - %s',
 })
 
 // Generate OG Image
@@ -50,7 +50,7 @@ const siteData = useSiteConfig()
 defineOgImage({
   props: {
     title: category.value?.toUpperCase(),
-    description: `You will find all the ${category.value} related post here`,
+    description: `Все записи, связанные с ${category.value}, вы найдете здесь`,
     siteName: siteData.url,
   },
 })

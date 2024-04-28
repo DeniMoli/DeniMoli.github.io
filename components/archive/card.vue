@@ -55,7 +55,7 @@ withDefaults(defineProps<Props>(), {
           </div>
         </div>
         <div class="flex group-hover:underline text-sky-700 dark:text-sky-400 items-center pt-2">
-          <p>Read More</p>
+          <p>Читать далее</p>
           <LogoArrow />
         </div>
       </div>

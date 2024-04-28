@@ -53,7 +53,7 @@ withDefaults(defineProps<Props>(), {
           {{ description }}
         </p>
         <div class="flex group-hover:underline text-sky-700 dark:text-sky-400 items-center py-2">
-          <p>Read More</p>
+          <p>Читать далее</p>
           <LogoArrow />
         </div>
       </div>

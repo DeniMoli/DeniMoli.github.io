@@ -28,11 +28,10 @@
 ## Preview
 
 <p align="center">
-  <a href="https://blog.nurriyad.xyz" target="_blank">
+  <a href="https://denimoli.github.io" target="_blank">
     <img width="1090" src="./assets/images/preview1.png">
     <img width="1090" src="./assets/images/preview2.png">
     <img width="1090" src="./assets/images/preview3.png">
-    <img width="1090" src="./assets/images/preview4.png">
     <br>
     Live Demo
   </a>
@@ -40,9 +39,7 @@
 
 ## Demo
 
-https://blog.nurriyad.xyz
-
-> Hosted on [Vercel](https://vercel.com/): `npm run build`
+https://denimoli.github.io/
 
 ## Build Setup
 

@@ -60,7 +60,7 @@ function onNextPageClick() {
 }
 
 useHead({
-  title: 'Archive',
+  title: 'Архив',
   meta: [
     {
       name: 'description',
@@ -74,7 +74,7 @@ useHead({
 const siteData = useSiteConfig()
 defineOgImage({
   props: {
-    title: 'Archive',
+    title: 'Архив',
     description: 'Здесь вы найдете все записи, которые я написал и опубликовал на этом сайте.',
     siteName: siteData.url,
   },

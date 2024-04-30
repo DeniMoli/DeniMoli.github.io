@@ -4,7 +4,7 @@
 const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES'
   ? {
       generate: {
-        routes: '/d-blog/',
+        routes: '/denimoli.github.io/',
       },
     }
   : {}
@@ -15,13 +15,13 @@ export default defineNuxtConfig({
     head: {
       charset: 'utf-16',
       viewport: 'width=device-width,initial-scale=1',
-      title: 'D-blog',
-      titleTemplate: '%s - D-Blog',
+      title: 'Блог Дениса Бычкова',
+      titleTemplate: '%s - denimoli',
       meta: [
         {
           name: 'description',
           content:
-            'D-Blog Исследуйтем мир веб технологий вместе. Маленький блог о всем что может пригодится разработчику.',
+            'Блог Дениса Бычковаю. Исследуйтем мир веб технологий вместе. Маленький блог о всем что может пригодится разработчику.',
         },
       ],
     },

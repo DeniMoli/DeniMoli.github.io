@@ -1,22 +1,13 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 // only add `router.base = '/<repository-name>/'` if `DEPLOY_ENV` is `GH_PAGES`
-// eslint-disable-next-line n/prefer-global/process
-const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES'
-  ? {
-      generate: {
-        routes: '/denimoli.github.io/',
-      },
-    }
-  : {}
 
 export default defineNuxtConfig({
-  ...routerBase,
   app: {
     head: {
       charset: 'utf-16',
       viewport: 'width=device-width,initial-scale=1',
       title: 'Блог Дениса Бычкова',
-      titleTemplate: '%s - denimoli',
+      titleTemplate: '%s - Блог Дениса Бычкова',
       meta: [
         {
           name: 'description',

@@ -8,10 +8,6 @@
 
 ### Built with
 
-<p align="center">
-    <img width="200" src="./assets/images/logo.png">
-</p>
-
  Nuxt Blog built with [Nuxt3](https://nuxt.com), [Nuxt-Content2](https://content.nuxtjs.org/blog/announcing-v2/), [Vue3](https://vuejs.org) & [TailwindCss](https://tailwindcss.com/)
 
 ## Features
@@ -24,18 +20,6 @@
 - Url preview with Nuxt ogImage
 - Dark and light mode
 - Server Side Rendered(SSR) with Nuxt3
-
-## Preview
-
-<p align="center">
-  <a href="https://denimoli.github.io" target="_blank">
-    <img width="1090" src="./assets/images/preview1.png">
-    <img width="1090" src="./assets/images/preview2.png">
-    <img width="1090" src="./assets/images/preview3.png">
-    <br>
-    Live Demo
-  </a>
-</p>
 
 ## Demo
 

@@ -1,0 +1,49 @@
+sources:
+  - name: "Habr"
+    url: "https://habr.com/ru/rss/flows/develop/articles/"
+    language: "ru"
+    enabled: true
+    topics: []  # пусто = использовать global топики
+
+  - name: "dev.to"
+    url: "https://dev.to/feed"
+    language: "en"
+    enabled: true
+    topics: ["javascript", "typescript", "vue", "frontend", "css", "ai"]
+
+  - name: "CSS-Tricks"
+    url: "https://css-tricks.com/feed/"
+    language: "en"
+    enabled: true
+    topics: ["css", "frontend", "javascript"]
+
+topics:
+  global:
+    - "javascript"
+    - "typescript"
+    - "vue"
+    - "nuxt"
+    - "css"
+    - "frontend"
+    - "web"
+    - "node"
+    - "devops"
+    - "git"
+    - "html"
+    - "react"
+    - "vite"
+    - "webpack"
+    - "ai"
+    - "llm"
+
+images:
+  output_dir: "public/blogs-img/"
+  fallback: "/blogs-img/blog.jpg"
+
+pipeline:
+  max_articles_per_run: 3
+  min_word_count: 300
+  dry_run: true  # поставить false для реального деплоя
+  commit_and_push: true
+  request_timeout: 15
+  user_agent: "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"

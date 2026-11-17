@@ -6,13 +6,13 @@ export default defineNuxtConfig({
     head: {
       charset: 'utf-16',
       viewport: 'width=device-width,initial-scale=1',
-      title: 'Блог Дениса Бычкова',
-      titleTemplate: '%s - Блог Дениса Бычкова',
+      title: 'Deni B Blog',
+      titleTemplate: '%s - Deni B Blog',
       meta: [
         {
           name: 'description',
           content:
-            'Блог Дениса Бычковаю. Исследуйтем мир веб технологий вместе. Маленький блог о всем что может пригодится разработчику.',
+            'Deni B Blog. Исследуйтем мир веб технологий вместе. Маленький блог о всем что может пригодится разработчику.',
         },
       ],
     },
@@ -46,6 +46,11 @@ export default defineNuxtConfig({
     prerender: {
       crawlLinks: true,
       routes: ['/'],
+    },
+    // unenv@2 changed its path structure — nuxt-og-image@3 uses the old paths
+    alias: {
+      'unenv/runtime/mock/empty': 'unenv/mock/empty',
+      'unenv/runtime/mock/proxy-cjs': 'unenv/mock/proxy-cjs',
     },
   },
 

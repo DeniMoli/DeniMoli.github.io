@@ -27,7 +27,7 @@ useHead({
         'Ниже перечислены все темы, на которые я либо уже писал блог, либо напишу в ближайшее время.',
     },
   ],
-  titleTemplate: 'Блог Дениса Бычкова - %s',
+  titleTemplate: 'Deni B Blog - %s',
 })
 
 // Generate OG Image

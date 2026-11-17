@@ -6,7 +6,7 @@ const pageNumber = ref(1)
 const searchTest = ref('')
 
 const formattedData = computed(() => {
-  return data.value?.map((articles) => {
+  return data.value?.map((articles: any) => {
     return {
       path: articles._path,
       title: articles.title || 'no-title available',
@@ -22,24 +22,18 @@ const formattedData = computed(() => {
 })
 
 const searchData = computed(() => {
-  return formattedData.value.filter((data) => {
+  return formattedData.value.filter((data: any) => {
     const lowerTitle = data.title.toLocaleLowerCase()
-    if (lowerTitle.search(searchTest.value) !== -1)
-      return true
-    else
-      return false
+    return lowerTitle.search(searchTest.value) !== -1
   }) || []
 })
 
 const paginatedData = computed(() => {
-  return searchData.value.filter((data, idx) => {
+  return searchData.value.filter((data: any, idx: number) => {
     const startInd = ((pageNumber.value - 1) * elementPerPage.value)
     const endInd = (pageNumber.value * elementPerPage.value) - 1
 
-    if (idx >= startInd && idx <= endInd)
-      return true
-    else
-      return false
+    return idx >= startInd && idx <= endInd
   }) || []
 })
 
@@ -50,8 +44,7 @@ function onPreviousPageClick() {
 
 const totalPage = computed(() => {
   const ttlContent = searchData.value.length || 0
-  const totalPage = Math.ceil(ttlContent / elementPerPage.value)
-  return totalPage
+  return Math.ceil(ttlContent / elementPerPage.value)
 })
 
 function onNextPageClick() {
@@ -67,7 +60,7 @@ useHead({
       content: 'Здесь вы найдете все записи, которые я написал и опубликовал на этом сайте.',
     },
   ],
-  titleTemplate: 'Блог Дениса Бычкова - %s',
+  titleTemplate: 'Deni B Blog - %s',
 })
 
 // Generate OG Image

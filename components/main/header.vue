@@ -11,7 +11,7 @@ function onClick(val: string) {
       <ul class="flex items-baseline space-x-5">
         <li class="text-base sm:text-2xl font-bold">
           <NuxtLink to="/">
-            Блог Денис Бычкова
+            Deni B Blog
           </NuxtLink>
         </li>
       </ul>

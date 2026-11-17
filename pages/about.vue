@@ -1,9 +1,9 @@
 <script setup lang="ts">
 defineOgImageComponent('About', {
   headline: 'Приветствую вас 👋',
-  title: 'Блог Дениса Бычкова',
-  description: 'Погрузитесь в веб-разработку вместе со мной и изучите Js, Ts, Vue, Nuxt, Docker',
-  link: '/Denis.jpg',
+  title: 'Deni B Blog',
+  description: 'Full Stack Developer — Vue 3, Nuxt 3, TypeScript, PHP. Пишу о веб-разработке и технологиях.',
+  link: '/Denis.png',
 })
 </script>
 
@@ -27,34 +27,26 @@ defineOgImageComponent('About', {
                 <Icon name="fa:github" size="1em" />
               </NuxtLink>
               <NuxtLink
-                to="/"
+                to="https://t.me/Deni62"
                 target="_blank"
                 class="px-2 py-1 lg:px-3 lg:py-2 bg-gray-300 text-gray-800 rounded-md dark:bg-slate-700 dark:text-[#F1F2F4]"
-                aria-label="LinkedIn"
+                aria-label="Telegram"
               >
-                <Icon name="fa:linkedin-square" size="1em" />
+                <Icon name="fa:telegram" size="1em" />
               </NuxtLink>
               <NuxtLink
-                to="/"
+                to="https://hh.ru/resume/6a8a4c8cff032ded650039ed1f646a44784764"
                 target="_blank"
                 class="px-2 py-1 lg:px-3 lg:py-2 bg-gray-300 text-gray-800 rounded-md dark:bg-slate-700 dark:text-[#F1F2F4]"
-                aria-label="Twitter"
+                aria-label="HeadHunter"
               >
-                <Icon name="fa:twitter-square" size="1em" />
-              </NuxtLink>
-              <NuxtLink
-                to="/"
-                target="_blank"
-                class="px-2 py-1 lg:px-3 lg:py-2 bg-gray-300 text-gray-800 rounded-md dark:bg-slate-700 dark:text-[#F1F2F4]"
-                aria-label="StackOverflow"
-              >
-                <Icon name="fa:stack-overflow" size="1em" />
+                <Icon name="fa:briefcase" size="1em" />
               </NuxtLink>
             </div>
           </div>
           <div class="sm:hidden block col-span-3 pb-5 dark:text-[#F1F2F4]">
             <NuxtImg
-              src="/Denis.jpg"
+              src="/Denis.png"
               width="125"
               height="115"
               quality="50"
@@ -63,16 +55,16 @@ defineOgImageComponent('About', {
           </div>
         </div>
         <h3 class="text-base sm:text-3xl font-semibold pb-7 sm:pb-12">
-          Инженер-программист, специалист по решению проблем, веб-энтузиаст.
+          Full Stack Developer · Vue · Nuxt · TypeScript
         </h3>
 
         <p>
-          Здравствуй, друг человеческий! Я - волшебник-программист, который проводит большую часть своего дня, изучая мир веб технологий. Только не просите меня произносить любовные заклинания, моя магия действует только на машины!
+          Привет! Я Full Stack Developer с почти 10 годами опыта в разработке. Сейчас работаю в SBX Group, где занимаюсь созданием масштабируемых SPA и SSR приложений на Vue 3 и Nuxt 3, бэкендом на PHP/Symfony/Laravel, настройкой Docker и CI/CD, а также интеграцией AI в продуктовые процессы. Этот блог — место, где я делюсь интересными находками из мира веб-разработки и технологий.
         </p>
       </div>
       <div class="hidden sm:block col-span-3">
         <NuxtImg
-          src="/Denis.jpg"
+          src="/Denis.png"
           width="450"
           height="500"
           quality="50"

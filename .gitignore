@@ -7,3 +7,5 @@ node_modules
 *.log
 .DS_Store
 .idea/
+# Blog automation pipeline state
+scripts/processed.json

@@ -1,3 +1,6 @@
+<script setup lang="ts">
+</script>
+
 <template>
   <div>
     <p class="text-black dark:text-zinc-300   text-2xl py-1 font-semibold">
@@ -25,20 +28,12 @@
         <Icon name="fa:telegram" size="1em" />
       </NuxtLink>
       <NuxtLink
-        to="/"
+        to="https://hh.ru/resume/6a8a4c8cff032ded650039ed1f646a44784764"
         target="_blank"
         class="p-2 bg-gray-300 text-gray-800 rounded-md dark:bg-sky-700 dark:text-[#F1F2F4]"
-        aria-label="Twitter"
+        aria-label="HeadHunter"
       >
-        <Icon name="fa:twitter-square" size="1em" />
-      </NuxtLink>
-      <NuxtLink
-        to="/"
-        target="_blank"
-        class="p-2 bg-gray-300 text-gray-800 rounded-md dark:bg-sky-700 dark:text-[#F1F2F4]"
-        aria-label="StackOverflow"
-      >
-        <Icon name="fa:stack-overflow" size="1em" />
+        <Icon name="fa:briefcase" size="1em" />
       </NuxtLink>
     </div>
   </div>

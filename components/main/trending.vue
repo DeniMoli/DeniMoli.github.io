@@ -29,7 +29,7 @@ useHead({
         'Добро пожаловать на мой блог. Получите веб-разработку, Javascript, Typescript, NodeJs, Vue и Nuxt, соответствующие статьи, советы, обучающие ресурсы и многое другое.',
     },
   ],
-  titleTemplate: 'Блог Денис Бычкова - %s',
+  titleTemplate: 'Deni B Blog - %s',
 })
 </script>
 

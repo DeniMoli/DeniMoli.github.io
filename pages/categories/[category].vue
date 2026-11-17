@@ -21,7 +21,7 @@ const { data } = await useAsyncData(`category-data-${category.value}`, () =>
 const formattedData = computed(() => {
   return data.value?.map((articles) => {
     return {
-      path: articles._path,
+      path: articles._path as string,
       title: articles.title || 'no-title available',
       description: articles.description || 'no-description available',
       image: articles.image || '/blogs-img/blog.jpg',
@@ -42,7 +42,7 @@ useHead({
       content: `Все записи, связанные с ${category.value}, вы найдете здесь`,
     },
   ],
-  titleTemplate: 'Блог Дениса Бычкова - %s',
+  titleTemplate: 'Deni B Blog - %s',
 })
 
 // Generate OG Image

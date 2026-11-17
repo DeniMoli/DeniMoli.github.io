@@ -7,7 +7,7 @@ const { data } = await useAsyncData('recent-post', () =>
 const formattedData = computed(() => {
   return data.value?.map((articles) => {
     return {
-      path: articles._path,
+      path: articles._path as string,
       title: articles.title || 'no-title available',
       description: articles.description || 'no-description available',
       image: articles.image || '/not-found.jpg',
@@ -29,7 +29,7 @@ useHead({
       'Добро пожаловать на мой блог. Получите веб-разработку, Javascript, Typescript, NodeJs, Vue и Nuxt, соответствующие статьи, советы, обучающие ресурсы и многое другое.',
     },
   ],
-  titleTemplate: 'Блог Дениса Бычкова - %s',
+  titleTemplate: 'Deni B Blog - %s',
 })
 </script>
 

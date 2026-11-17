@@ -1,45 +1,76 @@
+<h1 align="center">Блог Дениса Бычкова</h1>
+
 <p align="center">
-  <a href="https://blog.nurriyad.xyz" target="_blank">
-    <img  src="./assets/images/dark.png">
-  </a>
+  Личный блог о фронтенде, JavaScript, Vue/Nuxt и веб-разработке.<br>
+  <a href="https://denimoli.github.io/">denimoli.github.io</a>
 </p>
 
-<h1 align="center">Nuxt Blog A Personal Blog Site</h1>
+<p align="center">
+  <img src="./assets/images/dark.png" alt="Превью блога">
+</p>
 
-### Built with
+## Стек
 
- Nuxt Blog built with [Nuxt3](https://nuxt.com), [Nuxt-Content2](https://content.nuxtjs.org/blog/announcing-v2/), [Vue3](https://vuejs.org) & [TailwindCss](https://tailwindcss.com/)
+[Nuxt 3](https://nuxt.com) · [Nuxt Content](https://content.nuxt.com) · [Vue 3](https://vuejs.org) · [TailwindCSS](https://tailwindcss.com) · GitHub Pages
 
-## Features
-- Write blog with markdown file
-- Auto generate category from blog post
-- Blog list page with search and pagination
-- About me page for user info
-- Auto generate table of content for blog post
-- Auto generate Sitemap
-- Url preview with Nuxt ogImage
-- Dark and light mode
-- Server Side Rendered(SSR) with Nuxt3
+## Возможности
 
-## Demo
+- Посты в Markdown (`content/blogs/`)
+- Категории автоматически собираются из тегов постов
+- Список статей с поиском и пагинацией
+- Оглавление для каждого поста
+- Sitemap и OG-превью ссылок (`nuxt-og-image`)
+- Тёмная и светлая тема
+- SSR и статическая генерация
+- `app-ads.txt` для рекламных сетей (`public/app-ads.txt`)
 
-https://denimoli.github.io/
+## Запуск
 
-## Build Setup
-
-**Requires Node.js 16+**
+**Требуется Node.js 18+** (в CI используется Node 20)
 
 ```bash
-# install dependencies
-yarn install
-
-# serve in dev mode, with hot reload at localhost:5173
-yarn run dev
-
-# build for production
-yarn run build
-
-# serve in production mode
-yarn run  preview
-
+yarn install        # установить зависимости
+yarn dev            # dev-сервер на localhost:3000
+yarn build          # production-сборка
+yarn preview        # просмотр production-сборки
+yarn lint           # проверка ESLint
 ```
+
+## Новый пост
+
+Создайте файл в `content/blogs/` с frontmatter:
+
+```yaml
+---
+title: "Заголовок"
+date: "2026-11-17"
+description: "Краткое описание"
+image: "/blogs-img/cover.webp"
+alt: "Описание картинки"
+ogImage: "/blogs-img/cover.webp"
+tags: ["javascript", "frontend"]
+published: true
+---
+```
+
+Картинки кладите в `public/blogs-img/`. Показываются только посты с `published: true`.
+
+## Автоматическая публикация постов
+
+В `scripts/` лежит Python-пайплайн: забирает статьи из RSS (Habr, dev.to, CSS-Tricks), фильтрует по темам, переводит, конвертирует в Markdown и публикует в `content/blogs/`.
+
+```bash
+pip install -r scripts/requirements.txt
+python scripts/main.py --config scripts/config.yaml
+```
+
+Источники, темы и лимиты настраиваются в `scripts/config.yaml`. Для тестового прогона без коммита оставьте `pipeline.dry_run: true`.
+
+## Деплой
+
+Каждый push в `master` запускает GitHub Actions (`.github/workflows/deploy.yml`): сборка с `--preset github_pages` и публикация `.output/public` на GitHub Pages.
+
+## Контакты
+
+- GitHub: [DeniMoli](https://github.com/DeniMoli)
+- Telegram: [@Deni62](https://t.me/Deni62)

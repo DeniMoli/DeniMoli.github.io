@@ -16,7 +16,7 @@ defineOgImageComponent('About', {
   headline: 'Приветствую вас 👋',
   title: 'Денис Бычков',
   description: 'Погрузитесь в веб-разработку вместе со мной и изучите Js, Ts, Vue, Nuxt, Docker',
-  link: '/Denis.jpg',
+  link: '/Denis.png',
 })
 </script>
 
